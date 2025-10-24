@@ -28,7 +28,7 @@ export default function WeatherModal({ weather, user, onClose }) {
                     <p className="text-xl text-gray-600">{description}</p>
                 </div>
 
-                <div className="flex justify-around bg-gray-100 p-4 rounded-lg">
+                <div className="flex justify-around align-center bg-gray-100 p-3 rounded-lg">
                     <div className="text-center">
                         <p className="text-sm text-gray-500">Мін. за день</p>
                         <p className="text-2xl font-bold">
@@ -36,15 +36,15 @@ export default function WeatherModal({ weather, user, onClose }) {
                         </p>
                     </div>
                     <div className="text-center">
-                        <p className="text-sm text-gray-500">Макс. за день</p>
-                        <p className="text-2xl font-bold">
-                            {weather.daily.temperature_2m_max[0]}°C
-                        </p>
-                    </div>
-                    <div className="text-center">
                         <p className="text-sm text-gray-500">Вітер</p>
                         <p className="text-2xl font-bold">
                             {weather.current_weather.windspeed} km/h
+                        </p>
+                    </div>
+                    <div className="text-center">
+                        <p className="text-sm text-gray-500">Макс. за день</p>
+                        <p className="text-2xl font-bold">
+                            {weather.daily.temperature_2m_max[0]}°C
                         </p>
                     </div>
                 </div>
